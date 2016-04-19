@@ -39,7 +39,7 @@ function Awake()
 {
 	if (useCustomPosition == false)
 	{
-		windowRect=Rect(Screen.width-windowSize.x-70,Screen.height-windowSize.y-70,windowSize.x,windowSize.y);
+		windowRect=Rect(Screen.width-windowSize.x*1.26,Screen.height-windowSize.y*1.1,windowSize.x,windowSize.y);
 	}
 	else
 	{

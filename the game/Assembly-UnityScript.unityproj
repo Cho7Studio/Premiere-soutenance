@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{098CA415-3FAF-38AD-4DB0-9FDA64B24944}</ProjectGuid>
+    <ProjectGuid>{D8C95F50-149A-C883-D0AA-DD4FD4296F29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript</AssemblyName>
@@ -57,6 +57,7 @@
      <Compile Include="Assets\Inventory\Scripts\Other\InvPauseGame.js" />
      <Compile Include="Assets\Inventory\Scripts\Other\WeaponSwitch.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\AdvancedAI.js" />
+     <Compile Include="Assets\colors\MES SCRIPTS\DestroyBullet.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\EnemyHealth.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\GameOver.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\LockRotations.js" />
@@ -71,16 +72,12 @@
      <Compile Include="Assets\colors\MES SCRIPTS\up.js" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Texture\zzRuler\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Minimalist Christmas\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Old Armchair\ReadMe.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -91,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{21C99BA1-BC80-D38E-202D-86E4F0E238E0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{3DB8E8F2-9884-709B-A5C0-7BD46BF884D3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -32,11 +32,12 @@ private var invDispKeyIsSame = false;
 //Assign the differnet components to variables and other "behind the scenes" stuff.
 function Awake ()
 {
+//-70, -(162.5+70*2)
 	playersinv = GetComponent(Inventory);
 
 	if (useCustomPosition == false)
 	{
-		windowRect = Rect(Screen.width-windowSize.x-70,Screen.height-windowSize.y-(162.5+70*2),windowSize.x,windowSize.y);
+		windowRect = Rect(Screen.width-windowSize.x*1.85,Screen.height-windowSize.y*2.45,windowSize.x,windowSize.y);
 	}
 	else
 	{
