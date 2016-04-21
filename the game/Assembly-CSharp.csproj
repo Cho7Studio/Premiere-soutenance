@@ -47,10 +47,14 @@
   <ItemGroup>
      <Compile Include="Assets\Texture\zzRuler\zzHorizontalRuler.cs" />
      <Compile Include="Assets\Texture\zzRuler\zzVerticalRuler.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\BossAI.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\BossHealth.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ControlPlayerNumber.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\LaunchCourse.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\MovingPlatform.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\Munitions.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\PlayerSetup.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\PlayerStat.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ReseauNetworkManager.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
