@@ -9,6 +9,11 @@ function NouvellePartie()
 	Application.LoadLevel("Scene.1");
 }
 
+function ChargerNival()
+{
+	Application.LoadLevel("ChargerNival");
+}
+
 function Quitter()
 {
 	Application.Quit();

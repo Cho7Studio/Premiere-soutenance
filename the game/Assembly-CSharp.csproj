@@ -49,6 +49,7 @@
      <Compile Include="Assets\Texture\zzRuler\zzVerticalRuler.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\BossAI.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\BossHealth.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\ChargerNival.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ControlPlayerNumber.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\LaunchCourse.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\MovingPlatform.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\escape.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\zoneDegat.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
