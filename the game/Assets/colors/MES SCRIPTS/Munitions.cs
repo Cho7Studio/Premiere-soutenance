@@ -11,7 +11,7 @@ public class Munitions : MonoBehaviour {
 
 	void Start()
 	{
-		shot = GameObject.FindGameObjectWithTag ("pourrigate").GetComponent<ShotEject>();
+		shot = GameObject.FindGameObjectWithTag ("pourrigate").GetComponent<ShotEject> ();
 	}
 
 	void OnTriggerEnter(Collider hit)
@@ -33,6 +33,10 @@ public class Munitions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		while (shot == null) 
+		{
+			shot = GameObject.FindGameObjectWithTag ("pourrigate").GetComponent<ShotEject> ();
+		}
 		if (showGUI && Input.GetKeyDown ("e")) 
 		{
 			shot.munition += 10;

@@ -44,6 +44,10 @@ function EquipmentEffectToggle (effectIs : boolean)
 		{
 			GameObject.Find("cible").SendMessage("activeRegen", true);
 		}
+		if(gameObject.tag == "vitesse")
+		{
+			GameObject.Find("FPSController").SendMessage("ActiveVitesse", true);
+		}
 		
 		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS EQUIPPED. <-----
 		
@@ -54,6 +58,10 @@ function EquipmentEffectToggle (effectIs : boolean)
 		if(gameObject.tag == "regeneration")
 		{
 			GameObject.Find("cible").SendMessage("activeRegen", false);
+		}
+		if(gameObject.tag == "vitesse")
+		{
+			GameObject.Find("FPSController").SendMessage("ActiveVitesse", false);
 		}
 		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS UNEQUIPPED. <-----
 	}

@@ -11,10 +11,16 @@ public class ShotEject : MonoBehaviour {
 	public int maxMunition = 100;
 	public GUIStyle InstructionBoxSkin;
 
+	private GameObject arme;
 	private Rigidbody bullet;
 	private float nextFire = 0.0f;
 	private bool fullAuto = false;
 
+
+	void Start()
+	{
+		arme = GameObject.FindGameObjectWithTag ("ici");
+	}
 
 	// Update is called once per frame
 	void Update () 
@@ -23,11 +29,12 @@ public class ShotEject : MonoBehaviour {
 		{
 			nextFire = Time.time + fireRate;
 			bullet = (UnityEngine.Rigidbody) Instantiate (bulletCasing[(int)Random.Range (0f, (float)bulletCasing.Length)], transform.position, transform.rotation);
+			arme.GetComponent<Animation>().PlayQueued ("pourri");
 			munition--;
 			bullet.velocity = transform.TransformDirection (Vector3.left * ejectSpeed);
 		}
 
-		if (Input.GetButtonDown ("Fire2")) 
+		if (Input.GetButtonDown ("Fire3")) 
 		{
 			fullAuto = !fullAuto;
 		}
