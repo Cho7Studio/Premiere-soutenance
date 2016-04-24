@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\Texture\zzRuler\zzHorizontalRuler.cs" />
      <Compile Include="Assets\Texture\zzRuler\zzVerticalRuler.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\BossAI.cs" />
@@ -59,10 +60,14 @@
      <Compile Include="Assets\colors\MES SCRIPTS\ReseauNetworkManager.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\disparitionParticules.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\escape.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\zoneDegat.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\ReadMe.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Texture\zzRuler\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
@@ -80,6 +85,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{3DB8E8F2-9884-709B-A5C0-7BD46BF884D3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{14528433-25A8-FCB4-FE2C-34D024A9B16E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

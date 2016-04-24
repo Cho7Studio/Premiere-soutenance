@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+		[SerializeField] private float multiplicateurVitesse = 5;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -28,6 +29,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+
+		private float JumpSpeed;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -42,6 +45,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
+		public void ActiveVitesse(bool activation)
+		{
+			if (activation)
+			{
+				m_WalkSpeed = m_WalkSpeed * multiplicateurVitesse;
+				m_RunSpeed = m_RunSpeed * multiplicateurVitesse;
+				m_JumpSpeed = 0;
+			} 
+			else 
+			{
+				m_JumpSpeed = JumpSpeed;
+				m_WalkSpeed = m_WalkSpeed / multiplicateurVitesse;
+				m_RunSpeed = m_RunSpeed / multiplicateurVitesse;
+			}
+		}
         // Use this for initialization
         private void Start()
         {
@@ -55,6 +74,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+			JumpSpeed = m_JumpSpeed;
         }
 
 

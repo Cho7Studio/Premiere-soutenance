@@ -6,12 +6,12 @@ using System;
 public class Munitions : MonoBehaviour {
 
 	public GUISkin InstructionBoxSkin;
-	ShotEject shot;
+	PlayerStat shot;
 	private bool showGUI = false;
 
 	void Start()
 	{
-		shot = GameObject.FindGameObjectWithTag ("pourrigate").GetComponent<ShotEject> ();
+		shot = GameObject.FindGameObjectWithTag("pv").GetComponent<PlayerStat>();
 	}
 
 	void OnTriggerEnter(Collider hit)
@@ -32,14 +32,11 @@ public class Munitions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () 
-	{
-		while (shot == null) 
-		{
-			shot = GameObject.FindGameObjectWithTag ("pourrigate").GetComponent<ShotEject> ();
-		}
+	{ 	
+
 		if (showGUI && Input.GetKeyDown ("e")) 
-		{
-			shot.munition += 10;
+		{			
+			shot.munition = shot.munition + 10;
 			Destroy (gameObject);
 		}
 	}

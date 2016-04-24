@@ -8,6 +8,8 @@ public class PlayerStat : MonoBehaviour {
 	public float Health = 100f;
 	public float maxHP = 100f;
 	public Texture2D HpTexture;
+	public int munition = 30;
+	public int maxMunition = 100;
 	//var hitsound : AudioClip;
 
 	private float HpLenght = 500;
@@ -35,6 +37,11 @@ public class PlayerStat : MonoBehaviour {
 			{
 				Health = maxHP;
 			}
+		}
+		munition = munition;
+		if (munition > maxMunition) 
+		{
+			munition = maxMunition;
 		}
 	}
 

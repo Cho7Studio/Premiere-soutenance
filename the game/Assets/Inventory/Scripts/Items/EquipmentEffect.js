@@ -5,31 +5,24 @@
 @script AddComponentMenu ("Inventory/Items/Equipment Effect")
 @script RequireComponent(Item)
 
+private var showGUI = false;
 private var effectActive = false;
-//private var playerstats : PlayerStat;
-function Start()
-{
-	//playerstats = GameObject.Find("cible").GetComponent(PlayerStat);
-}
 
 function Update () 
 {
 	if (effectActive == true)
 	{
-		//if(gameObject.tag == "regeneration")
-		//{
-			//if((playerstats.Health < playerstats.maxHP) && (playerstats.Health > 0))
-			//{
-				//playerstats.Health += Time.deltaTime * 4;
-				//if(playerstats.Health > playerstats.maxHP)
-				//{
-					//playerstats.Health = playerstats.maxHP;
-				//}
-			//}
-		//}
 		
 
 		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE AS LONG AS THE ITEM IS EQUIPPED. <-----
+	}
+}
+
+function OnGUI()
+{
+	if(showGUI)
+	{
+		GUI.Label(Rect(Screen.width/2,Screen.height/2,200,200),"+");
 	}
 }
 
@@ -48,12 +41,17 @@ function EquipmentEffectToggle (effectIs : boolean)
 		{
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", true);
 		}
+		if(gameObject.tag == "croix")
+		{
+
+			showGUI = true;
+		}
 		
-		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS EQUIPPED. <-----
-		
+		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS EQUIPPED. <-----	
 	}
 	else
 	{
+		Debug.Log("tangbjdkfn");
 		effectActive = false;
 		if(gameObject.tag == "regeneration")
 		{
@@ -61,7 +59,12 @@ function EquipmentEffectToggle (effectIs : boolean)
 		}
 		if(gameObject.tag == "vitesse")
 		{
+			Debug.Log("tangbjdkfn");
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", false);
+		}
+		if(gameObject.tag == "croix")
+		{
+			showGUI = false;
 		}
 		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS UNEQUIPPED. <-----
 	}

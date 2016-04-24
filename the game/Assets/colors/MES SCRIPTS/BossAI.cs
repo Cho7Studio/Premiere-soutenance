@@ -17,7 +17,6 @@ public class BossAI : MonoBehaviour {
 	private Transform target;
 	private float attackTime;
 	private string nb;
-	private bool combat;
 	private float Distance;
 	private Transform myTransform;
 
@@ -30,11 +29,11 @@ public class BossAI : MonoBehaviour {
 
 	void Start () 
 	{
+		cible = GameObject.FindGameObjectWithTag ("pv").transform;
 		ptain = cible.GetComponent<PlayerStat> ();
 		attackTime = Time.time;
 		GameObject go = GameObject.FindGameObjectWithTag ("Player");
 		target = go.transform;
-		combat = true;
 	}
 	
 	// Update is called once per frame
@@ -47,19 +46,19 @@ public class BossAI : MonoBehaviour {
 			Debug.DrawLine (target.position, myTransform.position);
 			myTransform.rotation = Quaternion.Slerp (myTransform.rotation, Quaternion.LookRotation (target.position - myTransform.position), rotationSpeed * Time.deltaTime);
 
-			if (Distance > minDistance /*&& combat*/) 
+			if (Distance > minDistance) 
 			{
 				myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
 				gameObject.GetComponent<Animation>().Play ("run");
 			} 
-			if (Distance <= minDistance /*&& combat*/) {
+			if (Distance <= minDistance) {
 				attack ();
 			}
 		}
 		else
 		{
 			gameObject.GetComponent<Animation>().Play ("idle");
-			combat = false;
+
 		}
 	}
 

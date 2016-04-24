@@ -137,6 +137,7 @@ function EquipItem(i:Item,slot:int)
 				Debug.LogError("Remember to assign the equip weapon variable!");
 			}
 		}
+
 		if (DebugMode)
 		{
 			Debug.Log(i.name + " has been equipped");
@@ -152,7 +153,8 @@ function UnequipItem(i:Item)
 	gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
 	
 	//We tell the Item to disable EquipmentEffects (if any).
-	if (i.equipmentEffect != null)
+
+	if (i.GetComponent(EquipmentEffect) != null)
 	{
 		equipmentEffectIs = false;
 		i.GetComponent(EquipmentEffect).EquipmentEffectToggle(equipmentEffectIs);
@@ -163,6 +165,7 @@ function UnequipItem(i:Item)
 	{
 		RemoveWeapon(i);
 	}
+
 	if (DebugMode)
 	{
 		Debug.Log(i.name + " has been unequipped");

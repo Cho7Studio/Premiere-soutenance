@@ -12,8 +12,8 @@ public class MovingPlatform : MonoBehaviour
 	[SerializeField]
 	Transform endTransform;
 
-	[SerializeField]
-	float platformSpeed;
+
+	public float platformSpeed = 1f;
 
 	Vector3 direction;
 	Transform destination;

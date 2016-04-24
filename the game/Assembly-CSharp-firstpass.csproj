@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
@@ -90,6 +91,9 @@
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
+     <None Include="Assets\Lava_Flowing_Shader\ReadMe.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Texture\zzRuler\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
