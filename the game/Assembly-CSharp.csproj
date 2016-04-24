@@ -60,9 +60,9 @@
      <Compile Include="Assets\colors\MES SCRIPTS\ReseauNetworkManager.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\disparitionParticules.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\escape.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\zoneDegat.cs" />
-     <Compile Include="Assets\disparitionParticules.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />

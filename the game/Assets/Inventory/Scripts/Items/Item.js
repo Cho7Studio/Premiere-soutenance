@@ -67,10 +67,13 @@ function PickUpItem ()
 	
 		if(stackable){
 			var locatedit:Item;
-			for(var t:Transform in playersinv.Contents){
-				if(t.name==this.transform.name){//if the item we wanna stack this on has the same name
+			for(var t:Transform in playersinv.Contents)
+			{
+				if(t.name==this.transform.name)
+				{//if the item we wanna stack this on has the same name
 					var i:Item=t.GetComponent(Item);
-					if(i.stack<i.maxStack){
+					if(i.stack<i.maxStack)
+					{
 						locatedit=i;
 					}
 				}

@@ -7,11 +7,6 @@
 
 private var showGUI = false;
 private var effectActive = false;
-//private var playerstats : PlayerStat;
-function Start()
-{
-	//playerstats = GameObject.Find("cible").GetComponent(PlayerStat);
-}
 
 function Update () 
 {
@@ -52,11 +47,11 @@ function EquipmentEffectToggle (effectIs : boolean)
 			showGUI = true;
 		}
 		
-		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS EQUIPPED. <-----
-		
+		//-----> THIS IS WHERE YOU INSERT CODE YOU WANT TO EXECUTE JUST WHEN THE ITEM IS EQUIPPED. <-----	
 	}
 	else
 	{
+		Debug.Log("tangbjdkfn");
 		effectActive = false;
 		if(gameObject.tag == "regeneration")
 		{
@@ -64,6 +59,7 @@ function EquipmentEffectToggle (effectIs : boolean)
 		}
 		if(gameObject.tag == "vitesse")
 		{
+			Debug.Log("tangbjdkfn");
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", false);
 		}
 		if(gameObject.tag == "croix")

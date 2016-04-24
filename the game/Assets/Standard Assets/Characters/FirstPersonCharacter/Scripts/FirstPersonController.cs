@@ -29,6 +29,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+
+		private float JumpSpeed;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -50,9 +52,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			{
 				m_WalkSpeed = m_WalkSpeed * multiplicateurVitesse;
 				m_RunSpeed = m_RunSpeed * multiplicateurVitesse;
+				m_JumpSpeed = 0;
 			} 
 			else 
 			{
+				m_JumpSpeed = JumpSpeed;
 				m_WalkSpeed = m_WalkSpeed / multiplicateurVitesse;
 				m_RunSpeed = m_RunSpeed / multiplicateurVitesse;
 			}
@@ -70,6 +74,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+			JumpSpeed = m_JumpSpeed;
         }
 
 
