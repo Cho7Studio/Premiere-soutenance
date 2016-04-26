@@ -65,6 +65,7 @@
      <Compile Include="Assets\colors\MES SCRIPTS\MainMenuScript.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\PasDetruire.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\PlayerControl.js" />
+     <Compile Include="Assets\colors\MES SCRIPTS\PlayerControlMulti.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\PopClef.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\Weapon.js" />
      <Compile Include="Assets\colors\MES SCRIPTS\translation.js" />

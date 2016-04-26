@@ -10,6 +10,7 @@ public class PlayerStat : MonoBehaviour {
 	public Texture2D HpTexture;
 	public int munition = 30;
 	public int maxMunition = 100;
+	public int cadalDammage;
 	//var hitsound : AudioClip;
 
 	private float HpLenght = 500;
@@ -21,6 +22,13 @@ public class PlayerStat : MonoBehaviour {
 		Screen.lockCursor = true;
 	}
 
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.tag == "cadal") 
+		{
+			ApplyDammage (cadalDammage);
+		}
+	}
 
 	void Update () 
 	{

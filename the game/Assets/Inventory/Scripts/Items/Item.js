@@ -19,7 +19,7 @@ private var FPPickUpFound = false;
 @script AddComponentMenu ("Inventory/Items/Item")
 
 //Here we find the components we need.
-function Awake ()
+function Update ()
 {
 	playersinv = FindObjectOfType(Inventory); //finding the players inv.
 	if (playersinv == null)
@@ -29,6 +29,7 @@ function Awake ()
 	}
 	else
 	{
+		canGet = true;
 		gameObject.SendMessage("RetrievePlayer", playersinv, SendMessageOptions.DontRequireReceiver);
 	}
 	
