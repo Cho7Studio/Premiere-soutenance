@@ -75,10 +75,12 @@
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Texture\zzRuler\zzHorizontalRuler.cs" />
     <Compile Include="Assets\Texture\zzRuler\zzVerticalRuler.cs" />
+    <Compile Include="Assets\colors\MES SCRIPTS\ArmeMulti.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\BossAI.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\BossHealth.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\ChargerNival.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\ControlPlayerNumber.cs" />
+    <Compile Include="Assets\colors\MES SCRIPTS\ControleManadger.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\LaunchCourse.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\MovingPlatform.cs" />
     <Compile Include="Assets\colors\MES SCRIPTS\Munitions.cs" />

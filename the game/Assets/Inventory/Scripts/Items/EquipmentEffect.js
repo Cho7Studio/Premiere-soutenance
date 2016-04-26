@@ -51,7 +51,6 @@ function EquipmentEffectToggle (effectIs : boolean)
 	}
 	else
 	{
-		Debug.Log("tangbjdkfn");
 		effectActive = false;
 		if(gameObject.tag == "regeneration")
 		{
@@ -59,7 +58,6 @@ function EquipmentEffectToggle (effectIs : boolean)
 		}
 		if(gameObject.tag == "vitesse")
 		{
-			Debug.Log("tangbjdkfn");
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", false);
 		}
 		if(gameObject.tag == "croix")

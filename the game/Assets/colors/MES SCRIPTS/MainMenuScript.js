@@ -24,6 +24,11 @@ function Courses()
 	Application.LoadLevel("MenuCourse");
 }
 
+function CTC()
+{
+	Application.LoadLevel("MenuCTC");
+}
+
 function RetourMenu()
 {
 	Application.LoadLevel("Menu");
