@@ -4,6 +4,11 @@ var Health = 100;
 var cadalDammage : int;
 var EnemyName : String;
 
+function Awake()
+{
+	EnemyName = gameObject.transform.name;
+}
+
 function OnCollisionEnter(col : Collision)
 {
 	if(col.gameObject.tag == "cadal")

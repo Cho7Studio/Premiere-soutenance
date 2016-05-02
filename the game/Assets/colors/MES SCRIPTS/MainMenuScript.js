@@ -38,3 +38,8 @@ function Multi()
 {
 	Application.LoadLevel("MenuMulti");
 }
+
+function Combat()
+{
+	Application.LoadLevel("MenuCombat");
+}

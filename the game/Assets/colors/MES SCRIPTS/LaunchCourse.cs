@@ -43,7 +43,6 @@ public class LaunchCourse : MonoBehaviour {
 			time = Time.time - startTimer;
 			minute = Convert.ToInt32 (time) / 60;
 			seconde = Convert.ToInt32 (time) % 60;
-
 		}
 		if (end) 
 		{
@@ -129,8 +128,8 @@ public class LaunchCourse : MonoBehaviour {
 
 			if (GUI.Button (new Rect(Screen.width/2 - 40, Screen.height/2 + 40, 165, 40),"Retour au Menu")) 
 			{
-					Time.timeScale = 1f;
-					SceneManager.LoadScene ("MenuMulti");
+				Time.timeScale = 1f;
+				SceneManager.LoadScene ("MenuMulti");
 			}
 		}
 	}

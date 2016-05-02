@@ -28,7 +28,7 @@ function UseEffect ()
 
 	if(gameObject.tag == "Clef1")
 		{
-			var player = GameObject.Find("FPSController");
+			var player = GameObject.Find("FPSController1");
 			Application.LoadLevel("Scene 2");
 			player.transform.position = Vector3(5.75,3.541,-22);
 		}

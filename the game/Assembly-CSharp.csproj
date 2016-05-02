@@ -46,25 +46,32 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
-     <Compile Include="Assets\PlayerStatMulti.cs" />
      <Compile Include="Assets\Texture\zzRuler\zzHorizontalRuler.cs" />
      <Compile Include="Assets\Texture\zzRuler\zzVerticalRuler.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ArmeMulti.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\ArmeMultiCTF.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\BossAI.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\BossHealth.cs" />
-     <Compile Include="Assets\colors\MES SCRIPTS\BulletMulti.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\CPFmulti.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ChargerNival.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\Chaussette.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\CombatMulti.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ControlPlayerNumber.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ControleManadger.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\LaunchCourse.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\MovingPlatform.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\Munitions.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\PlayerSetup.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\PlayerSetupCombat.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\PlayerStat.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\PlayerStatCTF.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\PlayerStatMulti.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ReseauNetworkManager.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\ZBulletMulti.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\disparitionParticules.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\endLabyrinthe.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\escape.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\zoneDegat.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

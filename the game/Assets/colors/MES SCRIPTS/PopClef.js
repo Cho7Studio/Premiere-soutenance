@@ -28,7 +28,7 @@ function Update ()
 	if(aramasser && showGUI && Input.GetKeyDown("e"))
 	{
 		Loot();
-		GameObject.Find("gobelinPrisonier").GetComponent(PopClef).enabled = false;
+		GameObject.FindGameObjectWithTag("prisonier").GetComponent(PopClef).enabled = false;
 	}
 }
 
