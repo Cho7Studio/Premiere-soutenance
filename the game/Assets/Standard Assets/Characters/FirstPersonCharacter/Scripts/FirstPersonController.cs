@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+		[SerializeField] private float jumpSuperSaut = 7;
 		[SerializeField] private float multiplicateurVitesse = 5;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
@@ -45,6 +46,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+		public void ActiveSaut(bool activation)
+		{
+			if (activation) 
+			{
+				m_JumpSpeed = jumpSuperSaut;
+			} 
+			else 
+			{
+				m_JumpSpeed = JumpSpeed;
+			}
+		}
 
 		public void ActiveVitesse(bool activation)
 		{

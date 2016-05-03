@@ -41,6 +41,10 @@ function EquipmentEffectToggle (effectIs : boolean)
 		{
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", true);
 		}
+		if(gameObject.tag == "saut")
+		{
+			GameObject.Find("FPSController").SendMessage("ActiveSaut", true);
+		}
 		if(gameObject.tag == "croix")
 		{
 
@@ -59,6 +63,10 @@ function EquipmentEffectToggle (effectIs : boolean)
 		if(gameObject.tag == "vitesse")
 		{
 			GameObject.Find("FPSController").SendMessage("ActiveVitesse", false);
+		}
+		if(gameObject.tag == "saut")
+		{
+			GameObject.Find("FPSController").SendMessage("ActiveSaut", false);
 		}
 		if(gameObject.tag == "croix")
 		{

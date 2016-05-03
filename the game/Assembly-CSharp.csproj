@@ -69,6 +69,7 @@
      <Compile Include="Assets\colors\MES SCRIPTS\ReseauNetworkManager.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ShotEject.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\ZBulletMulti.cs" />
+     <Compile Include="Assets\colors\MES SCRIPTS\boddeath.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\delockcursor.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\disparitionParticules.cs" />
      <Compile Include="Assets\colors\MES SCRIPTS\endLabyrinthe.cs" />

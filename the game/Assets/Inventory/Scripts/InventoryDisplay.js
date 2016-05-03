@@ -39,7 +39,8 @@ function Awake()
 {
 	if (useCustomPosition == false)
 	{
-		windowRect=Rect(Screen.width-windowSize.x*1.26,Screen.height-windowSize.y*1.1,windowSize.x,windowSize.y);
+		//windowRect=Rect(Screen.width-windowSize.x*1.26,Screen.height-windowSize.y*1.1,windowSize.x,windowSize.y);
+		windowRect=Rect(Screen.width-windowSize.x-20,Screen.height-windowSize.y-20,windowSize.x,windowSize.y);
 	}
 	else
 	{
